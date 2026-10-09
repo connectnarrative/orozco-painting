@@ -1,0 +1,1 @@
+export function track(name:string,parameters:Record<string,unknown>={}){if(typeof window==='undefined')return;const w=window as typeof window&{dataLayer?:unknown[];gtag?:(...args:unknown[])=>void};w.dataLayer=w.dataLayer||[];w.dataLayer.push({event:name,...parameters});w.gtag?.('event',name,parameters);}

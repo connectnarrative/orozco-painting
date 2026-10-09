@@ -1,0 +1,2 @@
+import Link from 'next/link';
+export default function NotFound(){return <main id="main"><section className="page-intro"><p className="breadcrumb">404 / Page not found</p><h1>A MISSED SPOT.</h1><p>This page isn’t here. Head back to the work, or tell us about your project.</p><div className="hero-actions" style={{marginTop:30}}><Link className="button" href="/">Back to home</Link><Link className="text-link" href="/quote">Get a quote</Link></div></section></main>}

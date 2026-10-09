@@ -1,0 +1,5 @@
+import Link from 'next/link';
+import {business} from '@/lib/business';
+import {pageMeta} from '@/lib/metadata';
+export const metadata=pageMeta('Contact','Request a painting quote for Toronto or the GTA, or contact Orozco Painting on Instagram.','/contact');
+export default function Contact(){return <main id="main"><section className="page-intro"><nav className="breadcrumb" aria-label="Breadcrumb"><Link href="/">Home</Link> / Contact</nav><h1>LET’S TALK<br/>SURFACES.</h1><p>Toronto, Ontario. Serving Toronto + GTA.</p></section><section className="contact-layout"><div><h2>Have a project?</h2><p>Send the details and photos through our quote form.</p><Link className="button" href="/quote">Get a quote</Link></div><div><h2>Find Orozco.</h2><a className="text-link" href={business.instagram} target="_blank" rel="noreferrer">@orozco.painting on Instagram</a>{business.phone&&<p><a href={'tel:'+business.phone}>{business.phone}</a></p>}{business.email&&<p><a href={'mailto:'+business.email}>{business.email}</a></p>}</div></section></main>}
