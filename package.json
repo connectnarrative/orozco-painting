@@ -61,8 +61,6 @@
   },
   "packageManager": "pnpm@11.25.0",
   "overrides": {
-    "miniflare": {
-      "sharp": "0.35.4"
-    }
+    "miniflare>sharp": "0.35.4"
   }
 }
